@@ -1,0 +1,42 @@
+# ---- build output -------------------------------------------------------
+Debug/
+Release/
+*.obj
+*.pdb
+*.ilk
+*.exe
+*.log
+*.tlog
+*.lastbuildstate
+*.idb
+*.iobj
+*.ipdb
+
+# ---- Visual Studio scratch ----------------------------------------------
+.vs/
+*.user
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# ---- written by the game at run time ------------------------------------
+Music/sound_log.txt
+
+# ---- old copies of the source that nothing compiles ---------------------
+# These are November drafts left over from before the project moved to one
+# folder. They are not in the .vcxproj and including one by mistake is what
+# broke the build once. Delete them when convenient.
+Audio_1.h
+Enemy_3.h
+iMain_2.cpp
+iMain_3.cpp
+
+# ---- working files that are not part of the game ------------------------
+# The .mpeg and .mp3 originals the .wav files were converted from. The game
+# only ever loads the .wav, and these add about 21 MB to a clone.
+Music/*.mpeg
+Music/*.mp3
+Music/*.aac
+Images/prev_*.png
